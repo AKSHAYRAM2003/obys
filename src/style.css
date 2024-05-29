@@ -20,7 +20,7 @@
     width: 100%;
     position: fixed;
     z-index:999;
-    background-color: #000;
+    background-color: black;
     padding: 25vh 10vw;
     font-family: plainlight;
 }
@@ -61,11 +61,53 @@ width:4vw;
     font-size:5vw;
     text-transform: uppercase;
     font-weight: 500;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #ffff;
+        color:#ffff;
+        font-weight:800;
+        opacity:1;
+    }
+
+    47%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #ffff;
+        color:#ffff;
+        font-weight:800;
+        opacity:0;
+    }
+     
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 0.1px #ffff;
+        font-weight:800;
+        color:transparent;
+        opacity:1;
+    }
+
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 0.1px #ffff;
+        font-weight:800;
+        color:transparent;
+        opacity:0;
+    }
+}
+
+
+
+
+
 
 #main{
     position: relative;
-    background-color: #000;
+    background-color: black;
 }
 #page1 {
     height: 100vh;
